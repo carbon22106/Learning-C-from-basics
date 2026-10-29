@@ -28,13 +28,7 @@ float multiply(float a, float b)
 
 float divide(float a, float b)
 {
-    if (b == 0){
-        printf("Cannot Divide By 0");
-        return 0;
-    }
-    else {
-        return a / b;
-    }
+    return a / b;
 }
 
 // power() -> dont need to recreate pow() function.
@@ -89,7 +83,14 @@ int main()
         else if (option == 4)
         {
         	take_values(&a, &b);
-        	printf("%.2f", divide(a, b));
+            if (b == 0)
+            {
+        	    printf("Cannot Divide By 0\n");
+            }
+            else
+            {
+                printf("%.2f", divide(a, b));
+            }
         }
         else if (option == 5)
         {
