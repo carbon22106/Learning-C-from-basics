@@ -4,6 +4,18 @@
 
 void reverse_array(int size, int* arr)
 {
+    for (int i = 0; i < size / 2; i++)
+    {
+        int temp = arr[i];
+        arr[i] = arr[size - 1 - i];
+        arr[size - 1 - i] = temp;
+    }
+}
+
+/*
+My inital code, works but over complicated. 
+void reverse_array(int size, int* arr)
+{
     int returned[size];
     int* last_index_of_arr = arr + (size - 1);
     for (int i = 0; i < size; i++)
@@ -16,6 +28,7 @@ void reverse_array(int size, int* arr)
         arr[i] = returned[i]; // *(arr+i) = *(returned+i)
     }
 }
+*/
 
 int main()
 {

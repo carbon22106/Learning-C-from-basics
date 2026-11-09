@@ -7,6 +7,8 @@
 
 int main()
 {
+    /*
+    my old way
     int nums[3];
     for (int i = 0; i < 3; i++)
     {
@@ -34,8 +36,34 @@ int main()
             // hard coding because of random values 2, 7 and 9.
         }
     }
+    */
 
-    for (int i = 0; i < 3; i++)
+    // better methord
+    int n;
+    printf("Number of Elements : "); scanf("%d", &n);
+    int mul[n];
+    int tables_array[n][10]; 
+
+
+    // taking values
+    for (int i = 0; i < n; i++)
+    {
+        printf("Element %d : ", i);
+        scanf("%d", &mul[i]);
+    }
+
+    // multiplying and storing
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < 10; j++)
+        {
+            tables_array[i][j] = mul[i] * (j+1);
+        }
+    }
+
+    printf("\n");
+
+    for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < 10; j++)
         {

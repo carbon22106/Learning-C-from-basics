@@ -4,7 +4,11 @@
 
 int main()
 {
-    int tables_array[3][10];
+    int n = 5, tables_array[n][10];
+    int mul[] = {2, 7, 9, 10, 15};
+
+    /*
+    // my version
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 10; j++)
@@ -24,13 +28,24 @@ int main()
             // hard coding because of random values 2, 7 and 9.
         }
     }
+    */
 
-    for (int i = 0; i < 3; i++)
+    // better way for handeling more inputs
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < 10; j++)
+        {
+            tables_array[i][j] = mul[i] * (j+1);
+        }
+    }
+
+    for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < 10; j++)
         {
             printf("%d:%d = %d\n", i, j, tables_array[i][j]);
         }
+        printf("\n");
     }
     return 0;
 }

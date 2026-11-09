@@ -13,5 +13,7 @@ This repository contains my notes, code examples, and practice programs as I lea
 - CH4 - While, Do While, For, Break and Continue
 - CH5 - Function, Recursion
 - CH6 - Pointer Decleration, Address Of (&), Value At (*), Pointer to Pointer, Call by Reference
+- CH7 - Initializing Arrays, Pointer Arithmetic, Passing Array to Functions, Multidimensional Arrays.
+- CH8 - Initializing and Printing Strings, Taking Strings as Inputs, gets() and puts(), Standard Library Functions for Strings. 
 
 I'll keep updating this repository as I progress through the tutorial and learn new concepts.
