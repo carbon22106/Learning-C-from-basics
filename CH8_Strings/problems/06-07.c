@@ -1,4 +1,5 @@
 // Write a program to encrypt a string by adding 1 to the ASCII value of its characters.
+// Write a program to decrypt the string encrypted using encrypt function in problem 6.
 
 #include<stdio.h>
 
